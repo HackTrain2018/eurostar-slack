@@ -1,0 +1,31 @@
+{
+  "name": "sentirail",
+  "version": "1.0.0",
+  "description": "Sentirail Slack incoming webhook",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackTrain2018/eurostar-slack.git"
+  },
+  "keywords": [
+    "sentirail",
+    "train",
+    "rail",
+    "rails",
+    "sentiment",
+    "slack",
+    "bot"
+  ],
+  "author": "Kamil Lelonek <kamil@lelonek.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HackTrain2018/eurostar-slack/issues"
+  },
+  "homepage": "https://github.com/HackTrain2018/eurostar-slack#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
