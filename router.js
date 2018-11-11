@@ -3,20 +3,28 @@ const router = express.Router()
 
 const {reportProblem, resolveProblem} = require('./slack')
 
+const issue = {
+  train: 4000,
+  carriage: 10,
+  seat: 33,
+  manager: 'Tina West',
+  issue: 'Temperature is too low!'
+}
+
 router.get('/', (req, res) => {
-  resolveProblem(4000, 10, 33, 'Bobby Tables', 'Temperature is too low!')
+  resolveProblem(issue)
 
   res
-  .status(204)
-  .send(null)
+  .status(200)
+  .send("OK")
 })
 
 router.post('/', (req, res) => {
-  reportProblem(4000, 10, 33, 'Bobby Tables', 'Temperature is too low!')
+  reportProblem(issue)
 
   res
-  .status(204)
-  .send(null)
+  .status(200)
+  .send("OK")
 })
 
 module.exports = {router}
