@@ -12,7 +12,7 @@ const issue = {
 }
 
 router.get('/', (req, res) => {
-  reportProblem(issue)
+  resolveProblem(issue)
 
   res
   .status(200)
@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-  resolveProblem(issue)
+  reportProblem(issue)
 
   res
   .status(200)
