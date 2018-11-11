@@ -10,6 +10,12 @@ Install all projec dependencies:
 
 Run application server:
 
+    npm run dev-server
+
+## Production
+
+Run application server:
+
     npm start
 
 ## Usage

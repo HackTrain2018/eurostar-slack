@@ -4,7 +4,8 @@
   "description": "Sentirail Slack incoming webhook",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev-server": "nodemon --inspect ./index.js"
   },
   "repository": {
     "type": "git",
@@ -30,5 +31,8 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "firebase-admin": "^6.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
   }
 }
