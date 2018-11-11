@@ -1,5 +1,5 @@
 const axios = require('axios')
-const {SLACK_URL} = require('./config')
+const {SLACK_URL, HOST} = require('./config')
 
 function payloadProblem(train, carriage, seat, manager, issue) {
   return {
@@ -16,7 +16,7 @@ function payloadProblem(train, carriage, seat, manager, issue) {
             type: 'button',
             value: 'resolved',
             style: 'primary',
-            url: 'https://squixy.fwd.wf',
+            url: HOST,
             confirm: {
               title: 'Are you sure?',
               text: 'Have you solved the problem?',
